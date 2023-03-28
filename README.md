@@ -13,5 +13,6 @@
 	psql -d postgres<br>
 	ALTER USER postgres WITH PASSWORD ‘yournewpassword';
 <h2>Please do so in the directory directly under this project</h2>
+	mvn compile<br>
 	mvn package<br>
 	java -jar target/mySolution-0.0.1.jar
