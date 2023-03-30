@@ -50,7 +50,7 @@ public class WebSecurityConfig {
 			.sessionCreationPolicy(SessionCreationPolicy.IF_REQUIRED)
 			// ログイン前のセッションを破棄して、新しいセッションを作成する。
 			// ログイン前のオブジェクトは引き継がれない（デフォルトは引き継がれる）
-			.sessionFixation().newSession()
+			.sessionFixation().migrateSession()
 			// 同時ログイン数
 			.maximumSessions(10)
 			// ログインは先勝ち（false→後勝ち）
