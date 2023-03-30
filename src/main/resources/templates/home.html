@@ -1,33 +1,29 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
-    <head>
-        <title>home</title>
-        <link th:href="@{/webjars/bootstrap/5.2.2/css/bootstrap.min.css}" rel="stylesheet" >
-        <link th:href="@{/css/regist.css}" rel="stylesheet" >
+  <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+		<meta name="generator" content="Hugo 0.84.0">
+		<title>Home</title>
 
-    </head>
-    <body>
+		<!-- Bootstrap core CSS -->
+		<link th:href="@{/webjars/bootstrap/5.2.2/css/bootstrap.min.css}" rel="stylesheet" >
+		<link th:href="@{/css/login.css}" rel="stylesheet" >
 
-      <div class="container-xxl my-md-4 bd-layout">
-        <h1>
-          ASOBIBA powerd by miyake
-        </h1>
-        <nav class="nav">
-          <a class="nav-link disabled" aria-current="page" href="#">Home</a>
-          <a class="nav-link" th:href="@{/login}">ログインデモ</a>
-          <a class="nav-link" th:href="@{/regist}">新規登録デモ</a>
-        </nav>
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img th:src="@{/img/main.jpg}" class="d-block w-100" alt="...">
-          </div>
+		<style>
 
-        </div>
-      </div>
-
-        
-
-    </body>
+		</style>
+	</head>
+	<body class="text-center">
+		<main class="form-signin">
+				<nav class="nav">
+					<a class="nav-link disabled" aria-current="page" >Home</a>
+					<a class="nav-link" th:href="@{/login}">ログイン</a>
+					<a class="nav-link" th:href="@{/regist}">新規登録</a>
+				  </nav>
+    </main>
+	</body>
 </html>
 
